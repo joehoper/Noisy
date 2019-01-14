@@ -67,11 +67,11 @@ static void sAudioQueueOutputCallback(void *inUserData, AudioQueueRef inAQ, Audi
 }
 
 
-static OSStatus sDefaultOutputDeviceChanged(AudioHardwarePropertyID inPropertyID, void *inClientData)
-{
-    NoiseGenerator *generator = (NoiseGenerator *)inClientData;
-    return [generator defaultOutputDeviceChanged];    
-}
+//static OSStatus sDefaultOutputDeviceChanged(AudioHardwarePropertyID inPropertyID, void *inClientData)
+//{
+//    NoiseGenerator *generator = (NoiseGenerator *)inClientData;
+//    return [generator defaultOutputDeviceChanged];    
+//}
 
 
 @implementation NoiseGenerator
@@ -161,7 +161,7 @@ static OSStatus sDefaultOutputDeviceChanged(AudioHardwarePropertyID inPropertyID
     UInt32  bufferFrames = bufferSize / sizeof(float);
     float  *buffer       = (float *)audioQueueBuffer->mAudioData;
     float   sample;
-    UInt32  i;
+    UInt32  i = 0;
     
     // White Noise
     if (_type == WhiteNoiseType) {

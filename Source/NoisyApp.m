@@ -54,8 +54,8 @@ static NSString *sNoiseVolumeKeyPath = @"NoiseVolume";
     [self setVolume:[[NSUserDefaults standardUserDefaults] doubleForKey:sNoiseVolumeKeyPath]];
     
     //    int p = [[NSUserDefaults standardUserDefaults] integerForKey:sPreviousNoiseTypeKeyPath];
-    [self setNoiseType:[[NSUserDefaults standardUserDefaults] integerForKey:sNoiseTypeKeyPath]];
-    previousNoiseType = [[NSUserDefaults standardUserDefaults] integerForKey:sPreviousNoiseTypeKeyPath];
+    [self setNoiseType:(int)[[NSUserDefaults standardUserDefaults] integerForKey:sNoiseTypeKeyPath]];
+    previousNoiseType = (int)[[NSUserDefaults standardUserDefaults] integerForKey:sPreviousNoiseTypeKeyPath];
     
     [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self selector:@selector(handleWorkspaceWillSleepNotification:) name:NSWorkspaceWillSleepNotification object:NULL];
 }
@@ -194,7 +194,7 @@ static NSString *sNoiseVolumeKeyPath = @"NoiseVolume";
 
 - (id) scriptNoiseType
 {
-    NoiseType type = [[NSUserDefaults standardUserDefaults] integerForKey:sNoiseTypeKeyPath];
+    NoiseType type = (int)[[NSUserDefaults standardUserDefaults] integerForKey:sNoiseTypeKeyPath];
     OSType scriptType;
 
     if (type == WhiteNoiseType) {
@@ -211,7 +211,7 @@ static NSString *sNoiseVolumeKeyPath = @"NoiseVolume";
 
 - (void)setScriptNoiseType:(id)scriptTypeAsNumber
 {
-    OSType scriptType = [scriptTypeAsNumber unsignedIntegerValue];
+    OSType scriptType = (int)[scriptTypeAsNumber unsignedIntegerValue];
     NoiseType type;
     
     if (scriptType == 'Nnon') {
