@@ -177,14 +177,14 @@ static NSString *sNoiseVolumeKeyPath = @"NoiseVolume";
 
 - (IBAction)openAboutNoiseColors:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"http://en.wikipedia.org/wiki/Colors_of_noise"];
+    NSURL *url = [NSURL URLWithString:WIKIPEDIA_URL];
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
 
 - (IBAction)openNoisyWebsite:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"http://github.com/jonshea/Noisy"];
+    NSURL *url = [NSURL URLWithString:GITHUB_URL];
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
 

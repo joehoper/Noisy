@@ -38,7 +38,16 @@
 
 
 #import "NoiseGenerator.h"
-#import <CoreAudio/AudioHardware.h>
+
+#if TARGET_OS_IOS
+    #define NG_CAST __bridge NoiseGenerator *
+    #define SELF_TO_VOID_STAR (__bridge void *)self
+    #define kAudioHardwareNoError 0
+#else
+    #import <CoreAudio/AudioHardware.h>
+    #define NG_CAST NoiseGenerator *
+    #define SELF_TO_VOID_STAR self
+#endif
 
 
 @interface NoiseGenerator (Internal)
@@ -62,7 +71,7 @@ static unsigned long sGetNextRandomNumber()
 
 static void sAudioQueueOutputCallback(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef inBuffer)
 {
-    NoiseGenerator *generator = (NoiseGenerator *)inUserData;
+    NoiseGenerator *generator = (NG_CAST)inUserData;
     [generator _processBuffer:inBuffer];
 }
 
@@ -85,13 +94,13 @@ static void sAudioQueueOutputCallback(void *inUserData, AudioQueueRef inAQ, Audi
     return self;
 }
 
-
+#ifndef TARGET_OS_IOS
 - (void)dealloc
 {
     [self stopAudio];
     [super dealloc];    
 }
-
+#endif
 
 - (void)initRandomEnv:(long)numRows
 {
@@ -129,7 +138,7 @@ static void sAudioQueueOutputCallback(void *inUserData, AudioQueueRef inAQ, Audi
         description.mBitsPerChannel   = sizeof(float) * 8;
 
         _isPlaying = YES;
-        OSStatus err = AudioQueueNewOutput(&description, sAudioQueueOutputCallback, self, CFRunLoopGetCurrent(), kCFRunLoopCommonModes, 0, &_queue);
+        OSStatus err = AudioQueueNewOutput(&description, sAudioQueueOutputCallback, SELF_TO_VOID_STAR, CFRunLoopGetCurrent(), kCFRunLoopCommonModes, 0, &_queue);
         if (err) { NSLog(@"AudioQueueNewOutput returned %d", err); return; }
 
         NSUInteger i;

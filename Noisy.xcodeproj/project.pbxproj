@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0408DF68185E843C00F402CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0408DF67185E843C00F402CF /* AudioToolbox.framework */; };
+		2C00303721ED3C7000597473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C00303621ED3C7000597473 /* AppDelegate.m */; };
+		2C00303A21ED3C7000597473 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C00303921ED3C7000597473 /* ViewController.m */; };
+		2C00303D21ED3C7000597473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C00303B21ED3C7000597473 /* Main.storyboard */; };
+		2C00303F21ED3C7000597473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C00303E21ED3C7000597473 /* Assets.xcassets */; };
+		2C00304221ED3C7000597473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C00304021ED3C7000597473 /* LaunchScreen.storyboard */; };
+		2C00304521ED3C7000597473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C00304421ED3C7000597473 /* main.m */; };
+		2C483C4621ED406900E1C872 /* NoiseGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 552C294E0E04A2CC0048FF6B /* NoiseGenerator.m */; };
+		2CA6FC2921EDD66900C36E92 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6FC2821EDD66800C36E92 /* AboutViewController.m */; };
 		552C29520E04A2CC0048FF6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 552C294C0E04A2CC0048FF6B /* main.m */; };
 		552C29530E04A2CC0048FF6B /* NoiseGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 552C294E0E04A2CC0048FF6B /* NoiseGenerator.m */; };
 		552C29540E04A2CC0048FF6B /* NoisyApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 552C29510E04A2CC0048FF6B /* NoisyApp.m */; };
@@ -37,6 +45,18 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2C00303321ED3C7000597473 /* NoisyMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoisyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C00303521ED3C7000597473 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C00303621ED3C7000597473 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C00303821ED3C7000597473 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C00303921ED3C7000597473 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C00303C21ED3C7000597473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C00303E21ED3C7000597473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C00304121ED3C7000597473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C00304321ED3C7000597473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C00304421ED3C7000597473 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CA6FC2721EDD66800C36E92 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		2CA6FC2821EDD66800C36E92 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		550C200D1171C44E0098F573 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		552C294C0E04A2CC0048FF6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = "<group>"; };
 		552C294D0E04A2CC0048FF6B /* NoiseGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoiseGenerator.h; path = Source/NoiseGenerator.h; sourceTree = "<group>"; };
@@ -54,6 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C00303021ED3C7000597473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +129,7 @@
 			children = (
 				8D1107320486CEB800E47090 /* Noisy.app */,
 				55C932170E57F13500AE58E3 /* Create Zip */,
+				2C00303321ED3C7000597473 /* NoisyMobile.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +140,7 @@
 				0408DF69185E848600F402CF /* Noisy.entitlements */,
 				080E96DDFE201D6D7F000001 /* Source */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				2C00303421ED3C7000597473 /* NoisyMobile */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -142,9 +171,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2C00303421ED3C7000597473 /* NoisyMobile */ = {
+			isa = PBXGroup;
+			children = (
+				2C00303521ED3C7000597473 /* AppDelegate.h */,
+				2C00303621ED3C7000597473 /* AppDelegate.m */,
+				2C00303821ED3C7000597473 /* ViewController.h */,
+				2C00303921ED3C7000597473 /* ViewController.m */,
+				2C00303B21ED3C7000597473 /* Main.storyboard */,
+				2C00303E21ED3C7000597473 /* Assets.xcassets */,
+				2C00304021ED3C7000597473 /* LaunchScreen.storyboard */,
+				2C00304321ED3C7000597473 /* Info.plist */,
+				2C00304421ED3C7000597473 /* main.m */,
+				2CA6FC2721EDD66800C36E92 /* AboutViewController.h */,
+				2CA6FC2821EDD66800C36E92 /* AboutViewController.m */,
+			);
+			path = NoisyMobile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2C00303221ED3C7000597473 /* NoisyMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C00305C21ED3C7100597473 /* Build configuration list for PBXNativeTarget "NoisyMobile" */;
+			buildPhases = (
+				2C00302F21ED3C7000597473 /* Sources */,
+				2C00303021ED3C7000597473 /* Frameworks */,
+				2C00303121ED3C7000597473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoisyMobile;
+			productName = NoisyMobile;
+			productReference = 2C00303321ED3C7000597473 /* NoisyMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
 		556725530E57EBB300327D19 /* Create Zip */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 556725610E57EC0000327D19 /* Build configuration list for PBXNativeTarget "Create Zip" */;
@@ -188,6 +252,14 @@
 			attributes = {
 				LastUpgradeCheck = 1010;
 				TargetAttributes = {
+					2C00303221ED3C7000597473 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					8D1107260486CEB800E47090 = {
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -203,6 +275,7 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Noise2 */;
 			projectDirPath = "";
@@ -210,11 +283,22 @@
 			targets = (
 				8D1107260486CEB800E47090 /* Noisy */,
 				556725530E57EBB300327D19 /* Create Zip */,
+				2C00303221ED3C7000597473 /* NoisyMobile */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C00303121ED3C7000597473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C00304221ED3C7000597473 /* LaunchScreen.storyboard in Resources */,
+				2C00303F21ED3C7000597473 /* Assets.xcassets in Resources */,
+				2C00303D21ED3C7000597473 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +344,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C00302F21ED3C7000597473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C483C4621ED406900E1C872 /* NoiseGenerator.m in Sources */,
+				2CA6FC2921EDD66900C36E92 /* AboutViewController.m in Sources */,
+				2C00303A21ED3C7000597473 /* ViewController.m in Sources */,
+				2C00304521ED3C7000597473 /* main.m in Sources */,
+				2C00303721ED3C7000597473 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +385,22 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		2C00303B21ED3C7000597473 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C00303C21ED3C7000597473 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C00304021ED3C7000597473 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C00304121ED3C7000597473 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		8D7FC7931213A76F00EB152C /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,6 +412,100 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2C00305D21ED3C7100597473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					arm64e,
+					armv7,
+					armv7s,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = NoisyMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jonshea.noisy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		2C00305E21ED3C7100597473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					arm64e,
+					armv7,
+					armv7s,
+					x86_64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = NoisyMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.jonshea.noisy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
 		556725560E57EBB400327D19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -463,6 +669,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C00305C21ED3C7100597473 /* Build configuration list for PBXNativeTarget "NoisyMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C00305D21ED3C7100597473 /* Debug */,
+				2C00305E21ED3C7100597473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		556725610E57EC0000327D19 /* Build configuration list for PBXNativeTarget "Create Zip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

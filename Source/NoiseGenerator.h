@@ -36,10 +36,10 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
  
-
-#import <Cocoa/Cocoa.h>
 #import <AudioToolbox/AudioToolbox.h>
 
+#define WIKIPEDIA_URL @"http://en.wikipedia.org/wiki/Colors_of_noise"
+#define GITHUB_URL @"http://github.com/jonshea/Noisy"
 
 #define kPinkMaxRandomRows		32
 #define kPinkRandomBits			30
